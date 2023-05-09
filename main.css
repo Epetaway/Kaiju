@@ -1,0 +1,120 @@
+/* Base CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Responsive grid */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
+  .col {
+    flex-basis: 100%;
+    padding: 15px;
+  }
+  
+  /* Responsive breakpoints */
+  @media (min-width: 768px) {
+    .col-md-6 {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      flex-basis: 33.333%;
+    }
+  }
+  
+  /* Add extra styles for your website components */
+
+  .jumbotron {
+    position: relative;
+    background-image: url('img/bg_img-intro.png');
+    background-size: cover;
+    background-position: Top center;
+    background-repeat: no-repeat;
+    height: 50vh; /* Adjust the height as needed */
+  }
+
+  .jumbotron-text-container {
+    position: relative;
+    color: white; /* Change the text color as needed */
+    background: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity */
+    padding: 20px;
+    border-radius: 5px; /* Add a border-radius if desired */
+  }
+  
+  .text-body-secondary {
+    color: #f8d58f; /* Adjust the secondary text color as needed */
+  }
+  
+  /* Add responsive rules */
+  @media (max-width: 767px) {
+    .jumbotron-text-container {
+      font-size: 0.8rem;
+    }
+  }
+
+
+.about-text {
+    min-height: 300px;
+}
+
+.about-image .image-container {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+    min-height: 300px;
+}
+
+.about-image img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 190%;
+}
+#achievements {
+    background: #f8f9fa;
+    padding: 40px 0;
+    border-radius: 5px;
+  }
+  
+  .badge-gold {
+    background-color: gold;
+  }
+  
+  .badge-silver {
+    background-color: silver;
+  }
+  
+  .badge-bronze {
+    background-color: #cd7f32;
+  }
+  
